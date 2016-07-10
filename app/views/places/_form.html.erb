@@ -2,5 +2,7 @@
 	<%= f.input :title %>
 	<%= f.input :visited_by %>
 	<%= f.input :address %>
+	<small class="text-muted">You can also enter an IP. Your IP is <%= request.ip %></small>
+	<br><br>
 	<%= f.button :submit, class: "btn btn-primary" %>
 <% end %>
