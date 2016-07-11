@@ -1,8 +1,23 @@
 <%= simple_form_for @place, html: { class: 'form-horizontal' } do |f| %>
 	<%= f.input :title %>
 	<%= f.input :visited_by %>
-	<%= f.input :address %>
+	<h4>Enter either an address or the coordinates</h4>
+	<%= f.input :raw_address, label: 'Address' %>
 	<small class="text-muted">You can also enter an IP. Your IP is <%= request.ip %></small>
+	<div class="row">
+		<div class="col-sm-3">
+			<%= f.input :latitude %>
+		</div>
+		<div class="col-sm-3">
+			<%= f.input :longitude %>
+		</div>
+	</div>
 	<br><br>
 	<%= f.button :submit, class: "btn btn-primary" %>
 <% end %>
+<br><br>
+<div class="card">
+  <div class="card-block">
+    <div id="map"></div>
+  </div>
+</div>
