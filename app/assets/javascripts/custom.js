@@ -16,6 +16,13 @@ jQuery(function() {
     	placeMarkerToMap(e.latLng, map)
     	updateFields(e.latLng)
     }); 
+    $("#find-on-map").click(function(e) {
+    	e.preventDefault();
+    	placeMarkerToMap({
+    		lat: parseInt(lat_field.val(), 10),
+    		lng: parseInt(lng_field.val(), 10)
+    	}, map);
+    });
 	}
 
 	function updateFields(latLng) {

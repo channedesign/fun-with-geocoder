@@ -11,6 +11,9 @@
 		<div class="col-sm-3">
 			<%= f.input :longitude, id: 'place_longitude' %>
 		</div>
+		<div class="col-sm-3 padding-top">
+			<%= link_to('Find on Map', '', class: "btn btn-info btn-xs", id: "find-on-map") %>
+		</div>
 	</div>
 	<br><br>
 	<%= f.button :submit, class: "btn btn-primary" %>
