@@ -6,10 +6,10 @@
 	<small class="text-muted">You can also enter an IP. Your IP is <%= request.ip %></small>
 	<div class="row">
 		<div class="col-sm-3">
-			<%= f.input :latitude %>
+			<%= f.input :latitude, id: 'place_latitude' %>
 		</div>
 		<div class="col-sm-3">
-			<%= f.input :longitude %>
+			<%= f.input :longitude, id: 'place_longitude' %>
 		</div>
 	</div>
 	<br><br>
@@ -17,7 +17,7 @@
 <% end %>
 <br><br>
 <div class="card">
-  <div class="card-block">
+  <div class="card-block" style="height:500px; width:100%;">
     <div id="map"></div>
   </div>
 </div>

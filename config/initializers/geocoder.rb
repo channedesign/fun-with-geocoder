@@ -23,4 +23,4 @@ Geocoder.configure(
 # Fix SSL_connect returned=1 errno=0 state=SSLv3 
 # read server certificate B: certificate verify failed 
 # (OpenSSL::SSL::SSLError)
-OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
+# OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
