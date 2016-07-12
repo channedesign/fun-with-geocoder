@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(function() {
 	var lat_field, lng_field;
 	lat_field = $('#place_latitude');
 	lng_field = $("#place_longitude");
