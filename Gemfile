@@ -36,6 +36,7 @@ gem "passenger"
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'simple_form'
 gem 'geocoder'
+gem 'jquery-turbolinks'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
